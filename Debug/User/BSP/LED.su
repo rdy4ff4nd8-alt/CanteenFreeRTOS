@@ -1,0 +1,3 @@
+../User/BSP/LED.c:15:6:LED_On	16	static
+../User/BSP/LED.c:20:6:LED_Off	16	static
+../User/BSP/LED.c:25:6:LED_Toggle	16	static

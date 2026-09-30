@@ -1,0 +1,2 @@
+../User/BSP/MyADC.c:11:6:MyADC_Init	8	static
+../User/BSP/MyADC.c:15:10:MyADC_Read	32	static

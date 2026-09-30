@@ -1,0 +1,5 @@
+../User/BSP/Sensor.c:11:6:Sensor_Init	8	static
+../User/BSP/Sensor.c:14:9:MQ2_ReadDO	8	static
+../User/BSP/Sensor.c:17:10:MQ2_ReadAO	8	static
+../User/BSP/Sensor.c:20:9:Flame_ReadDO	8	static
+../User/BSP/Sensor.c:23:10:Flame_ReadAO	8	static
