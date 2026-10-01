@@ -1,37 +1,16 @@
-/**
- * ESP01S_Hotel_MQTT - 酒店智能大厅人数显示系统 (MQTT 版) v1.6
- * 
- * v1.6 新增：
- *   - 每 30s 通过 UART 给 STM32 发 $HEARTBEAT# 心跳帧, STM32 收到后维持绿灯
- * v1.5 新增：
- *   - STM32 传感器上行：读 UART 收到的 $MQ2:...|...|...# 帧 → publish hotel/lobby/sensor
- * 
- * v1.1 修复：
- *   - 移除所有 Serial.printf 中的中文，避免 ESP8266 对齐异常 (Exception 9)
- *   - WiFi 等待循环加入 yield()，防止 WDT 复位
- *   - 修复 forwardToSTM32 重复发送帧的 bug
- *   - 改用 Serial.print + String 拼接，更稳定
- * 
- * 功能：WiFi连接 → MQTT订阅 → 接收JSON数据 → UART转发给STM32
- * 
- * 协议（ESP01S → STM32，UART 115200bps）：
- *   正常帧: $COUNT:42|PREDICT:45,43,41,40,38|THRESH:150|TIME:2026-08-03 14:30:25#
- *   错误帧: ERR#
- *   v1.4: TIME 字段改为 "YYYY-MM-DD HH:MM:SS"(含日期), 时区 +8 修正
- */
 
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 #include <ArduinoJson.h>
 
 // ==================== WiFi 配置 ====================
-const char* WIFI_SSID     = "Xiaomi 15 pro";
-const char* WIFI_PASSWORD = "1111llll";
+const char* WIFI_SSID     = "your";
+const char* WIFI_PASSWORD = "your";
 
 // ==================== MQTT Broker 配置 ====================
 //直接连内网
-const char* MQTT_SERVER = "172.20.10.3";
-const int   MQTT_PORT   = 1883;
+const char* MQTT_SERVER = "your";
+const int   MQTT_PORT   = your;
 
 const char* MQTT_USER = "";
 const char* MQTT_PASS = "";
