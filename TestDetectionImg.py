@@ -23,12 +23,12 @@ app = Flask(__name__, static_folder='.\\runs', static_url_path='/runs')
 
 PREDICT_NUM     = 4             # 预测未来 4 个时刻
 ALERT_THRESHOLD = 150
-DOMAIN          = 'http://172.20.10.3:5000'
+DOMAIN          = 'your'
 SAMPLE_MINUTES  = 2             # 与小程序拍照间隔对齐，用于生成 predict_time
 MAX_HISTORY     = 30            # 保留最近 30 条历史 (2min×30 = 60min)
 
-MQTT_BROKER     = '127.0.0.1'
-MQTT_PORT       = 1883
+MQTT_BROKER     = 'your'
+MQTT_PORT       = your
 MQTT_TOPIC      = 'hotel/lobby/data'
 MQTT_TOPIC_SENSOR = 'hotel/lobby/sensor'
 
