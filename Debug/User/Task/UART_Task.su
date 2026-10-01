@@ -1,3 +1,0 @@
-../User/Task/UART_Task.c:16:6:HAL_UARTEx_RxEventCallback	16	static
-../User/Task/UART_Task.c:23:13:Uart_Parse	72	static
-../User/Task/UART_Task.c:51:6:vUartTask	32	static

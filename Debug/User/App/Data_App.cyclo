@@ -1,5 +1,0 @@
-../User/App/Data_App.c:15:6:Data_MutexInit	1
-../User/App/Data_App.c:20:6:Data_SetSensor	2
-../User/App/Data_App.c:27:6:Data_GetSensor	2
-../User/App/Data_App.c:34:6:Data_SetMqtt	2
-../User/App/Data_App.c:40:6:Data_GetMqtt	2
